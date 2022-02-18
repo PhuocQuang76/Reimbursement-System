@@ -19,11 +19,36 @@ public class UserService {
     //The service class is also where other business logic occurs
 
     //Constructors
+    public UserService(){};
     public UserService(UserDao userDao){
         this.userDao = userDao;
     }
 
     //Methods
+    public User getLoginUser(int id){
+        return userDao.getLoginUser(id);
+    }
+
+    public List<User> getAllGroupMember(int id){
+        return userDao.getAllGroupMember(id);
+    }
+
+    public User getUserByEmail(String email){
+        return userDao.readUserByEmail(email);
+    }
+
+    public void updateUserInfo(User user){
+        userDao.updateUserInfo(user);
+    }
+
+    public List<User> getAllUser(){
+        return userDao.getAllUser();
+    }
+
+
+
+
+
     public List<User> getAllEmployee(){
         return userDao.getAllEmployee();
     }
@@ -32,24 +57,20 @@ public class UserService {
         return userDao.getALlManager();
     }
 
-    public List<User> getAllMemberManager1(){
-        return userDao.getAllMemberManager1();
-    }
 
-    public List<User> getAllMemberManager2(){
-        return userDao.getAllMemberManager2();
-    }
 
-    public User createNewUser(String email, String firstName, String lastName, Role role, String passWord ){
-        User user = new User(email,firstName,lastName,role,passWord);
-        LoggingSingleton.logger.info("User: \n" + user.toString() + " was created");
+//    public List<User> getAllMemberManager2(){
+//        return userDao.getAllMemberManager2();
+//    }
 
-        userDao.createUser(user);
-        return user;
-    }
+//    public User createNewUser(int userId,String email, String firstName, String lastName, Role role, String passWord ){
+//        User user = new User(userId,email,firstName,lastName,role,passWord);
+//        LoggingSingleton.logger.info("User: \n" + user.toString() + " was created");
+//
+//        userDao.createUser(user);
+//        return user;
+//    }
 
-    public User getUserByEmail(String email){
-        return userDao.readUserByEmail(email);
-    }
+
 
 }

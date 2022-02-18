@@ -7,5 +7,9 @@ import com.revature.models.Reimbursement;
 public class ReimbursementDetailService {
     private ReimbursementDao reimbursementDao;
 
+    public boolean updateReimbursement(Reimbursement reimbursement){
+        return reimbursementDao.updateReimbursement(reimbursement);
+    }
+
 
 }

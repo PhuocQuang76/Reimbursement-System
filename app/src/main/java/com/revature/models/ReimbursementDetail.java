@@ -4,19 +4,16 @@ import java.sql.Date;
 
 public class ReimbursementDetail extends Reimbursement {
     private Date submittedDate;
-    private Date createdDate;
-    private Date approvedDeniedDate;
+    private Date approvedDate;
     private Date transactionDate;
-    private int status;
-    private int type;
-    private double cost;
-    private String description;
+    private Enum expenseType;
+    private int typeId;
+    private int amount;
+    private String decision;
+    private String receipt;
 
 
-    //Constructor
-    public ReimbursementDetail(){
-        super();
-    }
+    public ReimbursementDetail(){};
 
     public Date getSubmittedDate() {
         return submittedDate;
@@ -26,20 +23,12 @@ public class ReimbursementDetail extends Reimbursement {
         this.submittedDate = submittedDate;
     }
 
-    public Date getCreatedDate() {
-        return createdDate;
+    public Date getApprovedDate() {
+        return approvedDate;
     }
 
-    public void setCreatedDate(Date createdDate) {
-        this.createdDate = createdDate;
-    }
-
-    public Date getApprovedDeniedDate() {
-        return approvedDeniedDate;
-    }
-
-    public void setApprovedDeniedDate(Date approvedDeniedDate) {
-        this.approvedDeniedDate = approvedDeniedDate;
+    public void setApprovedDate(Date approvedDate) {
+        this.approvedDate = approvedDate;
     }
 
     public Date getTransactionDate() {
@@ -50,37 +39,43 @@ public class ReimbursementDetail extends Reimbursement {
         this.transactionDate = transactionDate;
     }
 
-    public int getStatus() {
-        return status;
+    public Enum getExpenseType() {
+        return expenseType;
     }
 
-    public void setStatus(int status) {
-        this.status = status;
+    public void setExpenseType(Enum expenseType) {
+        this.expenseType = expenseType;
     }
 
-    public int getType() {
-        return type;
+    public int getTypeId() {
+        return typeId;
     }
 
-    public void setType(int type) {
-        this.type = type;
+    public void setTypeId(int typeId) {
+        this.typeId = typeId;
     }
 
-    public double getCost() {
-        return cost;
+    public int getAmount() {
+        return amount;
     }
 
-    public void setCost(double cost) {
-        this.cost = cost;
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
 
-    @Override
-    public String getDescription() {
-        return description;
+    public String getDecision() {
+        return decision;
     }
 
-    @Override
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDecision(String decision) {
+        this.decision = decision;
+    }
+
+    public String getReceipt() {
+        return receipt;
+    }
+
+    public void setReceipt(String receipt) {
+        this.receipt = receipt;
     }
 }

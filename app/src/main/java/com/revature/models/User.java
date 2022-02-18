@@ -1,6 +1,8 @@
 package com.revature.models;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     private int userId;
     private String email;
     private String firstName;
@@ -10,7 +12,8 @@ public class User {
 
     //Contructors
     public User(){};
-    public User(String email,String firstName, String lastName, Role role, String passWord){
+    public User(int userId,String email,String firstName, String lastName, Role role, String passWord){
+        this.userId = userId;
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
