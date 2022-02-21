@@ -1,6 +1,6 @@
 package com.revature.models;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 public class Reimbursement {
     private int reimbursementId;
@@ -9,9 +9,9 @@ public class Reimbursement {
     private String title;
     private String description;
     private int status;
-    private Date submittedDate;
-    private Date approvedDate;
-    private Date transactionDate;
+    private Timestamp submittedDate;
+    private Timestamp approvedDate;
+    private Timestamp transactionDate;
     private int typeId;
     private int amount;
 //    private String receipt;
@@ -19,7 +19,7 @@ public class Reimbursement {
     public Reimbursement(){};
 
     public Reimbursement(int reimbursementId, int userId, int managerId, String tittle, String description, int status,
-                         Date submittedDate,Date approvedDate,Date transactionDate,int typeId,int amount){
+                         Timestamp submittedDate,Timestamp approvedDate,Timestamp transactionDate,int typeId,int amount){
         this.reimbursementId = reimbursementId;
         this.userId = userId;
         this.managerId = managerId;
@@ -95,27 +95,27 @@ public class Reimbursement {
         this.status = status;
     }
 
-    public Date getSubmittedDate() {
+    public Timestamp getSubmittedDate() {
         return submittedDate;
     }
 
-    public void setSubmittedDate(Date submittedDate) {
+    public void setSubmittedDate(Timestamp submittedDate) {
         this.submittedDate = submittedDate;
     }
 
-    public Date getApprovedDate() {
+    public Timestamp getApprovedDate() {
         return approvedDate;
     }
 
-    public void setApprovedDate(Date approvedDate) {
+    public void setApprovedDate(Timestamp approvedDate) {
         this.approvedDate = approvedDate;
     }
 
-    public Date getTransactionDate() {
+    public Timestamp getTransactionDate() {
         return transactionDate;
     }
 
-    public void setTransactionDate(Date transactionDate) {
+    public void setTransactionDate(Timestamp transactionDate) {
         this.transactionDate = transactionDate;
     }
 

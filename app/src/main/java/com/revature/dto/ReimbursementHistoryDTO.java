@@ -3,6 +3,7 @@ package com.revature.dto;
 import com.revature.models.Reimbursement;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 public class ReimbursementHistoryDTO {
     private int userId;
@@ -11,17 +12,17 @@ public class ReimbursementHistoryDTO {
     private String firstName;
     private String lastName;
     private String status;
-    private Date submittedDate;
+    private Timestamp submittedDate;
     private String title;
     private String reimbursementType;
     private double amount;
-    private Date transactionDate;
-    private Date approvedDate;
+    private Timestamp transactionDate;
+    private Timestamp approvedDate;
 
 
     public ReimbursementHistoryDTO (){};
     public ReimbursementHistoryDTO (int userId,int reimbursementId,String firstName,String lastName,String status,
-                                    Date submittedDate,String title,String reimbursementType,double amount,Date transactionDate,Date approvedDate){
+                                    Timestamp submittedDate,String title,String reimbursementType,double amount,Timestamp transactionDate,Timestamp approvedDate){
         this.userId = userId;
         this.reimbursementId = reimbursementId;
         this.firstName = firstName;
@@ -76,11 +77,11 @@ public class ReimbursementHistoryDTO {
         this.status = status;
     }
 
-    public Date getSubmittedDate() {
+    public Timestamp getSubmittedDate() {
         return submittedDate;
     }
 
-    public void setSubmittedDate(Date submittedDate) {
+    public void setSubmittedDate(Timestamp submittedDate) {
         this.submittedDate = submittedDate;
     }
 
@@ -108,19 +109,19 @@ public class ReimbursementHistoryDTO {
         this.amount = amount;
     }
 
-    public Date getTransactionDate() {
+    public Timestamp getTransactionDate() {
         return transactionDate;
     }
 
-    public void setTransactionDate(Date transactionDate) {
+    public void setTransactionDate(Timestamp transactionDate) {
         this.transactionDate = transactionDate;
     }
 
-    public Date getApprovedDate() {
+    public Timestamp getApprovedDate() {
         return approvedDate;
     }
 
-    public void setApprovedDate(Date approvedDate) {
+    public void setApprovedDate(Timestamp approvedDate) {
         this.approvedDate = approvedDate;
     }
 }

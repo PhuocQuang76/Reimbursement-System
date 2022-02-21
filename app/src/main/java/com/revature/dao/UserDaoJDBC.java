@@ -104,7 +104,7 @@ public class UserDaoJDBC implements UserDao {
             System.out.println("updateUserInfo: "+user.getUserId());
             Connection con = connectionUtil.getConnection();
 
-            String sql = "update ers_users set user_id =?, email=?, first_name=?, last_name=?, role=?,password=? where user_id = ?";
+            String sql = "update ers_users set user_id =?, email=?, first_name=?, last_name=?, role=?,password=? where user_id = ? RETURNING user_id";
 
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setInt(1,user.getUserId());
@@ -116,7 +116,10 @@ public class UserDaoJDBC implements UserDao {
             ps.setInt(7,user.getUserId());
 
             ResultSet rs = ps.executeQuery();
-            System.out.println("updateUserInfo-> UserID : " + rs.getInt(1));
+            while(rs.next()){
+                System.out.println("updateUserInfo-> UserID : " + rs.getInt(1));
+            }
+
 
 
         } catch(SQLException e){

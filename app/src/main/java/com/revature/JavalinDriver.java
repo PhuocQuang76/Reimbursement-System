@@ -10,6 +10,7 @@ import com.revature.dao.ReimbursementDao;
 import com.revature.dao.ReimbursementDaoJDBC;
 import com.revature.dao.UserDao;
 import com.revature.dao.UserDaoJDBC;
+import com.revature.loggingwith4j.LoggingUtil;
 import com.revature.routes.AuthRoutes;
 import com.revature.routes.ReimbursementRoutes;
 import com.revature.routes.Route;
@@ -36,7 +37,11 @@ public class JavalinDriver {
 
     public static void main(String[] args) {
         //Establish our Javalin app
+        LoggingUtil logger = new LoggingUtil();
         Javalin app = Javalin.create(config -> {
+            config.requestLogger((ctx, ms) -> {
+                logger.logRequest(ctx, ms);
+            });
             config.enableCorsForAllOrigins();
             config.addStaticFiles("/static", Location.CLASSPATH);
         });

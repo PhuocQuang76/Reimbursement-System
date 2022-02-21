@@ -4,6 +4,7 @@ import com.revature.models.Reimbursement;
 
 import java.io.Serializable;
 import java.sql.Date;
+import java.sql.Timestamp;
 
 public class ReimbursementCreateDTO  {
     private int userId;
@@ -11,8 +12,8 @@ public class ReimbursementCreateDTO  {
     private String title;
     private String description;
     private int status;
-    private Date submittedDate;
-    private Date transactionDate;
+    private Timestamp submittedDate;
+    private Timestamp transactionDate;
     private int typeId;
     private double amount;
 
@@ -56,19 +57,19 @@ public class ReimbursementCreateDTO  {
         this.status = status;
     }
 
-    public Date getSubmittedDate() {
+    public Timestamp getSubmittedDate() {
         return submittedDate;
     }
 
-    public void setSubmittedDate(Date submittedDate) {
+    public void setSubmittedDate(Timestamp submittedDate) {
         this.submittedDate = submittedDate;
     }
 
-    public Date getTransactionDate() {
+    public Timestamp getTransactionDate() {
         return transactionDate;
     }
 
-    public void setTransactionDate(Date transactionDate) {
+    public void setTransactionDate(Timestamp transactionDate) {
         this.transactionDate = transactionDate;
     }
 
