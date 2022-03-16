@@ -35,6 +35,7 @@ public class ReimbursementDaoJDBC implements ReimbursementDao{
             PreparedStatement ps = con.prepareStatement(sql);
             //Set type as param for all indexes
             ps.setInt(1, userId);
+//            ps.setTimestamp(2, new java.sql.Timestamp(new java.util.Date().getTime()));
             ps.setTimestamp(2, new java.sql.Timestamp(new java.util.Date().getTime()));
             ps.setInt(3,2);
             ps.setInt(4, managerId);

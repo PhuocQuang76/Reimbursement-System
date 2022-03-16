@@ -43,7 +43,11 @@ dependencies {
 
 }
 
+jar{
+
+}
+
 application {
     // Define the main class for the application.
-    mainClass = 'com.example.SchoolManagementDriver'
+    mainClass = 'com.revature.JavalinDriver'
 }

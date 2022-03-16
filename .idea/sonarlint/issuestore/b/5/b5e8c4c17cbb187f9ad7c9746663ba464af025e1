@@ -1,0 +1,9 @@
+
+7
+java:S1116"Remove this empty statement.(àí«øøÿÿÿÿ
+Q	java:S125>"<This block of commented-out lines of code should be removed.(öƒÇŽ
+Q	java:S125B"<This block of commented-out lines of code should be removed.(šì¦
+P
+java:S1128"5Remove this unused import 'com.revature.models.Role'.(Ê¾¬Ëüÿÿÿÿ
+[
+java:S1128"@Remove this unused import 'com.revature.utils.LoggingSingleton'.(™•ÜÇøÿÿÿÿ

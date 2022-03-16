@@ -1,0 +1,188 @@
+create table ers_users(
+	user_id serial primary key,
+	email varchar(100) unique not null,
+	first_name varchar(50),
+	last_name varchar(50),
+	role integer,
+	password varchar(50)
+);
+
+
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name1@revature.net","name1","last1","2","name1");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name2@revature.net","name2","last2","2","name2");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name3@revature.net","name3","last3","1","name3");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name4@revature.net","name4","last4","1","name4");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name5@revature.net","name5","last5","1","name5");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name6@revature.net","name6","last6","1","name6");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name7@revature.net","name7","last7","1","name7");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name8@revature.net","name8","last8","1","name8");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name9@revature.net","name9","last9","1","name9");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name10@revature.net","name10","last10","1","name10");
+
+----------
+CREATE TABLE ers_employee_manager(
+	employee_id integer REFERENCES ers_users,
+	manager_id integer REFERENCES ers_users,
+	primary key(employee_id,manager_id)
+);
+
+INSERT INTO ers_employee_manager(employee_id, manager_id) VALUES(3,1);
+INSERT INTO ers_employee_manager(employee_id, manager_id) VALUES(4,1);
+INSERT INTO ers_employee_manager(employee_id, manager_id) VALUES(5,1);
+INSERT INTO ers_employee_manager(employee_id, manager_id) VALUES(6,1);
+INSERT INTO ers_employee_manager(employee_id, manager_id) VALUES(7,2);
+INSERT INTO ers_employee_manager(employee_id, manager_id) VALUES(8,2);
+INSERT INTO ers_employee_manager(employee_id, manager_id) VALUES(9,2);
+INSERT INTO ers_employee_manager(employee_id, manager_id) VALUES(10,2);
+
+-----------------
+
+CREATE TABLE ers_reimbursement_status(
+	status_id serial PRIMARY KEY,
+	status varchar(50),
+	description varchar(100)
+);
+
+INSERT INTO ers_reimbursement_status(status,description) VALUES("CREATED","User just saved the reimbursement");
+INSERT INTO ers_reimbursement_status(status,description) VALUES("PENDING","User submited the reimbursement");
+INSERT INTO ers_reimbursement_status(status,description) VALUES("APPROVED","Manager approved the reimbursement");
+INSERT INTO ers_reimbursement_status(status,description) VALUES("DENIED","Manager deinied the reimbursement");
+
+--------------------
+
+CREATE TABLE ers_reimbursement_type(
+	reimbursement_type_id serial PRIMARY KEY,
+	reimbursement_type varchar(50),
+);
+
+INSERT INTO ers_reimbursement_type(reimbursement_type) VALUES("LODGING");
+INSERT INTO ers_reimbursement_type(reimbursement_type) VALUES("TRAVEL");
+INSERT INTO ers_reimbursement_type(reimbursement_type) VALUES("FOOD");
+INSERT INTO ers_reimbursement_type(reimbursement_type) VALUES("OTHER");
+
+
+--------------------
+
+CREATE TABLE ers_reimbursement(
+	reimbursement_id serial PRIMARY KEY,
+	user_id integer REFERENCES ers_users,
+	date_submitted TIMESTAMP,
+	status_id integer REFERENCES ers_reimbursement_status,
+	manager_id integer REFERENCES ers_users,
+	date_approved_denied TIMESTAMP,
+	title varchar(50),
+	description varchar(150),
+	type_id integer REFERENCES ers_reimbursement_type,
+	cost decimal(5,2),
+	transaction_date TIMESTAMP
+);
+
+
+----------------
+
+CREATE TABLE ers_reimbursement_history(
+	reimbursement_history_id  serial PRIMARY key,
+	user_id integer REFERENCES ers_users ,
+	reimbursement_id integer REFERENCES ers_reimbursement,
+	create_date TIMESTAMP,
+	date_submitted TIMESTAMP,
+	status_id integer REFERENCES ers_reimbursement_status,
+	date_approved_denied TIMESTAMP
+);
+
+--------------
+CREATE TABLE ers_reimbursement_items(
+	reimbursement_item_id serial PRIMARY KEY,
+	reimbursement_id integer REFERENCES ers_reimbursement,
+	reimbursement_type_id integer REFERENCES ers_reimbursement_type,
+	cost decimal (5,2),
+	transaction_date DATE,
+	receipt varchar(150)
+);
+
+
+------------
+
+
+For testing
+
+select * from ers_users where role = 1;
+
+select *
+from ers_users
+join ers_employee_manager
+on ers_users.user_id = ers_employee_manager .employee_id
+where ers_employee_manager.manager_id = 1;
+
+
+
+insert into ers_reimbursement(user_id,manager_id,title,description,status_id)
+values(1,3,'test','test',1);
+
+
+insert into ers_reimbursement_history(user_id,reimbursement_id,create_date,status_id)
+values(3,2,'01/11/2022',1);
+
+
+select * from ers_users
+where user_id = 1;
+
+
+update ers_users
+set user_id = 5, email = 'name5@revature.net', first_name = 'name5', last_name = 'last5', password = '555555555"'
+where user_id = 5;
+
+select email, password from ers_users ;
+
+
+insert into ers_reimbursement(user_id, date_submitted,status_id,manager_id,date_approved_denied,description,title)
+values(3,NOW(),2,1,null,'test','test');
+
+select manager_id from ers_employee_manager  where employee_id = 3
+
+insert into ers_reimbursement_history (user_id,reimbursement_id,create_date,date_submitted,status_id,date_approved_denied)
+values(3,3,NOW(),NOW(),2,null);
+
+
+insert into ers_reimbursement_items(reimbursement_id,reimbursement_type_id,cost,transaction_date,receipt)
+values (3,1,'390.00','2022-12-12','');
+
+
+insert into ers_reimbursement(user_id, date_submitted,status_id,manager_id,date_approved_denied,title,description,type_id ,cost,transaction_date)
+values(3,NOW(),2,1,null,'test','test',1,33,'2022-12-12');
+
+
+
+select reimbursement_id, user_id, date_submitted , date_approved_denied, title ,description,type_id ,cost ,transaction_date
+from ers_reimbursement
+where status_id =2 and manager_id = 2;
+
+select * from ers_reimbursement where user_id = 3 and status_id = 2;
+
+
+select first_name, last_name from ers_users where user_id = 1;
+
+select first_name, last_name from ers_users where user_id = 1;
+
+select reimbursement_type from ers_reimbursement_type where reimbursement_type_id = 1;
+select reimbursement_id,user_id,date_submitted,date_approved_denied,title,type_id,cost,transaction_date from ers_reimbursement where user_id = 3 and status_id = 2;
+
+select reimbursement_type from ers_reimbursement_type where reimbursement_type_id = 1;
+
+select reimbursement_id,user_id,date_submitted,date_approved_denied,title,type_id,cost,transaction_date from ers_reimbursement
+where manager_id = 1 and status_id = 3 or  manager_id = 1 and status_id = 4;
+
+
+select first_name , last_name from ers_users where user_id =1;
+
+select reimbursement_id,user_id,date_submitted,status_id,date_approved_denied,title,type_id,cost,transaction_date
+from ers_reimbursement
+where manager_id = 1 and status_id = 2;
+
+update ers_reimbursement set status_id = 3, date_approved_denied = now() where reimbursement_id = 2;
+
+update ers_reimbursement_history set status_id = 3, date_approved_denied = now() where reimbursement_id = 2;
+
+select reimbursement_id,user_id,date_submitted,status_id,date_approved_denied,title,type_id,cost,transaction_date
+from ers_reimbursement
+where user_id = 3 and status_id  = 2;

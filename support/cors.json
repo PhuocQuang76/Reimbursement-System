@@ -1,0 +1,9 @@
+[
+  {
+    "origin": ["http://loclhost:7000"],
+    "method": ["GET", "POST", "OPTIONS"],
+    "responseHeader": ["*"],
+    "exposedHeaders": ["*"],
+    "credential": "true"
+  }
+]

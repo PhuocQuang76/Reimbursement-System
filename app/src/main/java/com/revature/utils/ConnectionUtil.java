@@ -42,3 +42,8 @@ public class ConnectionUtil {
         return null;
     }
 }
+/*
+Run/EditConfigureations/Environment Variables
+DB_USERNAME=postgres;DB_PASSWORD=aileen;DB_URL=jdbc:postgresql://35.236.54.72:5432/postgres
+
+ */

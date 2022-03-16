@@ -3,7 +3,8 @@ services:
   web:
     image: aileen/nginx:dev
     volumes:
-      - /Users/quanghongphuoc/Revature/Projects/Project1-FrontEnd:/usr/share/nginx/html
+      - /Volumes/Extreme SSD/Projects/Project1-FrontEnd:/usr/share/nginx/html
+#      - /Users/quanghongphuoc/Revature/Projects/Project1-FrontEnd:/usr/share/nginx/html
     ports:
       - "8080:80"
     environment:

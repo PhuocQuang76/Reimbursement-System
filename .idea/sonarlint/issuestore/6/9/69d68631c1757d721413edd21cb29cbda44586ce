@@ -1,0 +1,47 @@
+
+V	java:S1251"<This block of commented-out lines of code should be removed.(Íõ±ùıÿÿÿÿ
+V	java:S125]"<This block of commented-out lines of code should be removed.(Íõ±ùıÿÿÿÿ
+7
+java:S1116b"Remove this empty statement.(ôŸìúÿÿÿÿ
+W	java:S125¤"<This block of commented-out lines of code should be removed.(Íõ±ùıÿÿÿÿ
+W	java:S125Í"<This block of commented-out lines of code should be removed.(Íõ±ùıÿÿÿÿ
+8
+java:S1116Ò"Remove this empty statement.(ôŸìúÿÿÿÿ
+R	java:S125†"<This block of commented-out lines of code should be removed.(öƒÇ
+R	java:S125Â"<This block of commented-out lines of code should be removed.(˜­À
+Y
+java:S1128">Remove this unused import 'com.revature.models.Reimbursement'.(”ßÁõúÿÿÿÿ
+;
+java:S1128"%Remove this unused import 'java.sql'.(´İ…Å
+e
+java:S1192("JDefine a constant instead of duplicating this literal "last_name" 4 times.(»ºåóÿÿÿÿÿ
+^
+java:S1192."IDefine a constant instead of duplicating this literal "password" 5 times.(ì†ì,
+^
+java:S1192"HDefine a constant instead of duplicating this literal "user_id" 4 times.(·Ûü
+f
+java:S1192%"KDefine a constant instead of duplicating this literal "first_name" 4 times.(İ°ú–úÿÿÿÿ
+a
+java:S1192""FDefine a constant instead of duplicating this literal "email" 5 times.(¬äÂøÿÿÿÿ
+k	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ°ú–úÿÿÿÿ
+k	java:S117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ºåóÿÿÿÿÿ
+k	java:S117O"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ°ú–úÿÿÿÿ
+k	java:S117R"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ºåóÿÿÿÿÿ
+l	java:S117–"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ°ú–úÿÿÿÿ
+l	java:S117™"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ºåóÿÿÿÿÿ
+l	java:S117¿"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ°ú–úÿÿÿÿ
+l	java:S117Â"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ºåóÿÿÿÿÿ
+k
+java:S2095ô"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(àø„˜úÿÿÿÿ
+j
+java:S2095C"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(àø„˜úÿÿÿÿ
+j
+java:S2095m"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(àø„˜úÿÿÿÿ
+j
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(àø„˜úÿÿÿÿ
+k
+java:S2095³"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(àø„˜úÿÿÿÿ
+k
+java:S2095Š"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(àø„˜úÿÿÿÿ
+k
+java:S2095Ü"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(àø„˜úÿÿÿÿ

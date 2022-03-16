@@ -1,102 +1,103 @@
 
-V	java:S125]"<This block of commented-out lines of code should be removed.(„û¡¼üÿÿÿÿ
+W	java:S125&"<This block of commented-out lines of code should be removed.(üõ^8Ö™ÙÚñ/
+V	java:S125^"<This block of commented-out lines of code should be removed.(„û¡¼üÿÿÿÿ
 A
-java:S1481`"+Remove this unused "userID" local variable.(¦¬Öª
-7	java:S131""Add a default case to this switch.(ÆĞ`
-W	java:S125‹"<This block of commented-out lines of code should be removed.(İ¸Õûúÿÿÿÿ
-W	java:S125¢"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+java:S1481a"+Remove this unused "userID" local variable.(¦¬Öª
+7	java:S131‘""Add a default case to this switch.(ÆĞ`
+W	java:S125Œ"<This block of commented-out lines of code should be removed.(İ¸Õûúÿÿÿÿ
+W	java:S125£"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
 8
-java:S1116¬"Remove this empty statement.(ôŸìúÿÿÿÿ
+java:S1116­"Remove this empty statement.(ôŸìúÿÿÿÿ
 B
-java:S1481¶"+Remove this unused "userID" local variable.(¦¬Öª
-7	java:S131à""Add a default case to this switch.(¹ïáD
-7	java:S131é""Add a default case to this switch.(ÆĞ`
-W	java:S125û"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-7	java:S131¶""Add a default case to this switch.(¹ïáD
-7	java:S131Â""Add a default case to this switch.(ÆĞ`
-W	java:S125â"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-7	java:S131™""Add a default case to this switch.(¹ïáD
-7	java:S131¢""Add a default case to this switch.(ÆĞ`
-W	java:S125Â"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-R	java:S125Ö"<This block of commented-out lines of code should be removed.(íëÁË
-R	java:S125æ"<This block of commented-out lines of code should be removed.(€©°¡
-R	java:S125‚"<This block of commented-out lines of code should be removed.(íëÁË
-R	java:S125’"<This block of commented-out lines of code should be removed.(€©°¡
-7	java:S131Ï""Add a default case to this switch.(¹ïáD
-7	java:S131Û""Add a default case to this switch.(ÆĞ`
+java:S1481·"+Remove this unused "userID" local variable.(¦¬Öª
+7	java:S131á""Add a default case to this switch.(¹ïáD
+7	java:S131ê""Add a default case to this switch.(ÆĞ`
+W	java:S125ü"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+7	java:S131·""Add a default case to this switch.(¹ïáD
+7	java:S131Ã""Add a default case to this switch.(ÆĞ`
+W	java:S125ã"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+7	java:S131š""Add a default case to this switch.(¹ïáD
+7	java:S131£""Add a default case to this switch.(ÆĞ`
+W	java:S125Ã"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+R	java:S125×"<This block of commented-out lines of code should be removed.(íëÁË
+R	java:S125ç"<This block of commented-out lines of code should be removed.(€©°¡
+R	java:S125ƒ"<This block of commented-out lines of code should be removed.(íëÁË
+R	java:S125“"<This block of commented-out lines of code should be removed.(€©°¡
+7	java:S131Ğ""Add a default case to this switch.(¹ïáD
+7	java:S131Ü""Add a default case to this switch.(ÆĞ`
 Y
 java:S1128">Remove this unused import 'com.revature.models.Reimbursement'.(”ßÁõúÿÿÿÿ
 J
 java:S1068"4Remove this unused "simpleDateFormat" private field.(à­÷
 ²
-java:S1192Í"•Define a constant instead of duplicating this literal "select reimbursement_id,user_id,date_submitted,status_id,date_approved_denied,title," 3 times.(º“Ãøÿÿÿÿ
+java:S1192Î"•Define a constant instead of duplicating this literal "select reimbursement_id,user_id,date_submitted,status_id,date_approved_denied,title," 3 times.(º“Ãøÿÿÿÿ
 k
-java:S1192"TDefine a constant instead of duplicating this literal "reimbursementType: " 4 times.(âğ†Ê
+java:S1192Ÿ"TDefine a constant instead of duplicating this literal "reimbursementType: " 4 times.(âğ†Ê
 
-java:S1192Ò"€Define a constant instead of duplicating this literal "select first_name , last_name from ers_users where user_id = ?;" 3 times.(¼¢–öùÿÿÿÿ
+java:S1192Ó"€Define a constant instead of duplicating this literal "select first_name , last_name from ers_users where user_id = ?;" 3 times.(¼¢–öùÿÿÿÿ
 c
-java:S1192å"GDefine a constant instead of duplicating this literal "DENIED" 4 times.(ó³¥’ùÿÿÿÿ
+java:S1192æ"GDefine a constant instead of duplicating this literal "DENIED" 4 times.(ó³¥’ùÿÿÿÿ
 ^
-java:S1192•"GDefine a constant instead of duplicating this literal "TRAVEL" 5 times.(üÑ­ä
+java:S1192–"GDefine a constant instead of duplicating this literal "TRAVEL" 5 times.(üÑ­ä
 m
-java:S11926"RDefine a constant instead of duplicating this literal "reimbursementId: " 6 times.(Ó±êìşÿÿÿÿ
+java:S11927"RDefine a constant instead of duplicating this literal "reimbursementId: " 6 times.(Ó±êìşÿÿÿÿ
 z
-java:S1192x"_Define a constant instead of duplicating this literal "type_id,cost,transaction_date " 4 times.(¡ı¡àüÿÿÿÿ
+java:S1192y"_Define a constant instead of duplicating this literal "type_id,cost,transaction_date " 4 times.(¡ı¡àüÿÿÿÿ
 c
-java:S1192b"HDefine a constant instead of duplicating this literal "PENDING" 3 times.(†Ôùùÿÿÿÿ
+java:S1192c"HDefine a constant instead of duplicating this literal "PENDING" 3 times.(†Ôùùÿÿÿÿ
 ]
-java:S1192›"FDefine a constant instead of duplicating this literal "OTHER" 5 times.(¹ÎÆ­
+java:S1192œ"FDefine a constant instead of duplicating this literal "OTHER" 5 times.(¹ÎÆ­
 ^
-java:S1192’"HDefine a constant instead of duplicating this literal "LODGING" 5 times.(âô0
+java:S1192“"HDefine a constant instead of duplicating this literal "LODGING" 5 times.(âô0
 l
-java:S1192£"UDefine a constant instead of duplicating this literal "reimbursementType2: " 3 times.(Ú­ç
+java:S1192¤"UDefine a constant instead of duplicating this literal "reimbursementType2: " 3 times.(Ú­ç
 `
-java:S1192â"IDefine a constant instead of duplicating this literal "APPROVED" 4 times.(İ¢…ã
-g	java:S117Û"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Âù„
-g	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Âù„
+java:S1192ã"IDefine a constant instead of duplicating this literal "APPROVED" 4 times.(İ¢…ã
+g	java:S117Ü"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Âù„
+g	java:S117ˆ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Âù„
 a
-java:S1301à"KReplace this "switch" statement by "if" statements to increase readability.(¹ïáD
+java:S1301á"KReplace this "switch" statement by "if" statements to increase readability.(¹ïáD
 a
-java:S1301™"KReplace this "switch" statement by "if" statements to increase readability.(¹ïáD
+java:S1301š"KReplace this "switch" statement by "if" statements to increase readability.(¹ïáD
 a
 java:S1226"FIntroduce a new variable instead of reusing the parameter "managerId".(°áÎçşÿÿÿÿ
 \
 java:S1226!"FIntroduce a new variable instead of reusing the parameter "managerId".(Ğ¾ô™
-f
-java:S2095Ã"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¤Ü´…
 k
-java:S2095³"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(İñ¨’üÿÿÿÿ
-k
-java:S2095å"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Áú–úÿÿÿÿ
-k
-java:S2095‰"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Áú–úÿÿÿÿ
-k
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÌÎÀ”úÿÿÿÿ
-e
-java:S2095m"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¤Ü´…
-j
-java:S2095="OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Áú–úÿÿÿÿ
-k
-java:S2095Õ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÌÎÀ”úÿÿÿÿ
-k
-java:S2095ì"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(İñ¨’üÿÿÿÿ
-k
-java:S2095¾"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(àø„˜úÿÿÿÿ
-k
-java:S2095Ó"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(İñ¨’üÿÿÿÿ
-k
-java:S2095¥"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Áú–úÿÿÿÿ
-k
-java:S2095‘"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Áú–úÿÿÿÿ
-j
-java:S2095z"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Áú–úÿÿÿÿ
-j
-java:S2095#"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(àø„˜úÿÿÿÿ
-k
-java:S2095Ğ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Áú–úÿÿÿÿ
-M
-java:S2589Q"7Remove this expression which always evaluates to "true"(„ïÒß
-N
-java:S2589ô"7Remove this expression which always evaluates to "true"(ï—‹
-N
-java:S2589 "7Remove this expression which always evaluates to "true"(ï—‹
+java:S2095¿"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(àø„˜úÿÿÿÿ
+r
+java:S2095í"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(İñ¨’üÿÿÿÿ8‹ÉŞÚñ/
+l
+java:S2095n"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¤Ü´…8‡ÉŞÚñ/
+r
+java:S2095¦"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Áú–úÿÿÿÿ8‰ÉŞÚñ/
+q
+java:S2095#"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(àø„˜úÿÿÿÿ8ŠÉŞÚñ/
+m
+java:S2095Ä"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¤Ü´…8ˆÉŞÚñ/
+r
+java:S2095‚"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÌÎÀ”úÿÿÿÿ8‡ÉŞÚñ/
+r
+java:S2095Š"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Áú–úÿÿÿÿ8ŠÉŞÚñ/
+r
+java:S2095´"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(İñ¨’üÿÿÿÿ8‹ÉŞÚñ/
+r
+java:S2095Ö"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÌÎÀ”úÿÿÿÿ8‰ÉŞÚñ/
+q
+java:S2095{"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Áú–úÿÿÿÿ8ˆÉŞÚñ/
+r
+java:S2095Ñ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Áú–úÿÿÿÿ8‹ÉŞÚñ/
+q
+java:S2095>"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Áú–úÿÿÿÿ8ˆÉŞÚñ/
+r
+java:S2095’"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Áú–úÿÿÿÿ8ŠÉŞÚñ/
+r
+java:S2095Ô"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(İñ¨’üÿÿÿÿ8‰ÉŞÚñ/
+r
+java:S2095æ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Áú–úÿÿÿÿ8‰ÉŞÚñ/
+U
+java:S2589õ"7Remove this expression which always evaluates to "true"(ï—‹8ÉŞÚñ/
+T
+java:S2589R"7Remove this expression which always evaluates to "true"(„ïÒß8ÉŞÚñ/
+U
+java:S2589¡"7Remove this expression which always evaluates to "true"(ï—‹8ÉŞÚñ/

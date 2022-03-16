@@ -1,0 +1,40 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(•÷×Ü
+V	java:S125"<This block of commented-out lines of code should be removed.(º¨íñøÿÿÿÿ
+K
+java:S1611#"5Remove the parentheses around the "context" parameter(†±Æó
+V	java:S125("<This block of commented-out lines of code should be removed.(…ØÄñùÿÿÿÿ
+Q	java:S125,"<This block of commented-out lines of code should be removed.(…üéÙ
+P
+java:S16117"5Remove the parentheses around the "context" parameter(¢ÙÖŸùÿÿÿÿ
+V	java:S125="<This block of commented-out lines of code should be removed.(…ØÄñùÿÿÿÿ
+7
+java:S1116I"Remove this empty statement.(ôŸìúÿÿÿÿ
+P
+java:S1611M"5Remove the parentheses around the "context" parameter(Ùß†ƒşÿÿÿÿ
+P
+java:S1611U"5Remove the parentheses around the "context" parameter(ÿßöşÿÿÿÿ
+G
+java:S1602U",Remove useless curly braces around statement(ÿßöşÿÿÿÿ
+P
+java:S1611Y"5Remove the parentheses around the "context" parameter(¢š¢˜ùÿÿÿÿ
+G
+java:S1602Y",Remove useless curly braces around statement(¢š¢˜ùÿÿÿÿ
+Q	java:S125`"<This block of commented-out lines of code should be removed.(å¶¢Ê
+Q	java:S125d"<This block of commented-out lines of code should be removed.(‡„Ô¡
+O
+java:S1128"4Remove this unused import 'io.javalin.http.Context'.(Öƒ®Éúÿÿÿÿ
+a
+java:S1128	"FRemove this unused import 'org.checkerframework.checker.units.qual.A'.(¿‚áñøÿÿÿÿ
+D
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›
+t
+java:S1104#"^Make handleGetLoginUser a static final constant or non-public and provide accessors if needed.(†±Æó
+~
+java:S11047"cMake handleGetAllGroupMember a static final constant or non-public and provide accessors if needed.(¢ÙÖŸùÿÿÿÿ
+u
+java:S1104M"ZMake updateUserInfo a static final constant or non-public and provide accessors if needed.(Ùß†ƒşÿÿÿÿ
+u
+java:S1104U"ZMake getAllEmployee a static final constant or non-public and provide accessors if needed.(ÿßöşÿÿÿÿ
+t
+java:S1104Y"YMake getAllManager a static final constant or non-public and provide accessors if needed.(¢š¢˜ùÿÿÿÿ
